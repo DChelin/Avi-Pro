@@ -1,0 +1,289 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+/*
+Theme Name: Elementor Child Theme for Avipro
+Theme URI: https://brandcandy.co.za
+Author: Amy N + Ash B + Dev C from Brand Candy
+Author URI: https://brandcandy.co.za
+Description: Designed by the fantastic Brand Candy team.
+License: Brandcandy WordPress Theme, Copyright 2018 Richard Burgess
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Brandcandy
+*/
+
+/*Remove body margin*/
+html, body {
+    margin: 0px !important;
+  }
+  /*Stop x overflow*/
+  body {
+    overflow-x: hidden!important;
+  }
+  
+  /*-----GRAVITY FORMS-----*/
+  /*Text fields*/
+  .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+    border-radius: 0px !important;
+    padding: 10px 10px 10px 10px !important;
+    border-color: var(--e-global-color-22c65ab1) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+  }
+  /*Paragraph fields*/
+  .gform_wrapper textarea {
+    padding: 10px 10px 10px 10px !important;
+    margin-top: 12px !important;
+    border-width: 1px !important;
+    border-color: var(--e-global-color-22c65ab1) !important;
+    border-style: solid !important;
+    border-radius: 0px !important;
+  }
+  /*Field lables*/
+  .gform_wrapper label.gfield_label,
+  .gform_wrapper legend.gfield_label {
+    font-weight: 500 !important;
+    color: var(--e-global-color-primary);
+    margin-bottom: 0px !important;
+    margin-top: 20px !important;
+  }
+  /*Radio button and checkbox alignment*/
+  .gform_wrapper.gf_browser_chrome .gfield_checkbox li input,
+  .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type="checkbox"],
+  .gform_wrapper.gf_browser_chrome .gfield_radio li input[type="radio"] {
+    margin-top: 0px !important;
+  }
+  body .gform_wrapper ul li.gfield {
+    margin-top: 0px !important;
+  }
+  /*Submit button alignment*/
+  .gform_wrapper .gform_footer {
+    margin: 0 0 0 0 !important;
+    border: 0px;
+  }
+  
+  /*-----GUTENBERG BLOCKS-----*/
+  /*Padding for tables*/
+  .wp-block-table.is-style-stripes td,
+  .wp-block-table.is-style-stripes th {
+    padding: 10px;
+  }
+  /*Margin for divider*/
+  .wp-block-separator.is-style-wide {
+    border-bottom-width: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* ===============================================
+   * ==== Nav Menu Overline Gradient Background ====
+   * =============================================== */
+  
+  .elementor-nav-menu--main .menu-item a::before {
+      background-image: url("https://kstest.co.za/avipro/wp-content/uploads/2022/02/avipro-nav-design-element-1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  /* ===============================================
+   * ===== Button Linear Gradient Hover Effect =====
+   * =============================================== */
+  
+  a[role="button"] {
+    background: linear-gradient(to right, #fff 0%, #fff 30%, #e8138b 82%, #66cceb 100%);
+    background-size: 500%;
+    transition: all 0.5s ease-in-out;
+  }
+  a[role="button"]:hover {
+    animation-name: hover;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hover {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      color: white;
+      border: 1px solid transparent;
+    }
+    100% {
+      color: white;
+      background-position: 100%;
+      border: 1px solid transparent;
+    }
+  }
+  .elementor-posts-container .elementor-post .elementor-post__read-more {
+      padding: 10px 25px 10px 25px;
+      font-family: "Open Sans", Sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #222222;
+      border: solid 1px #E8138B;
+      border-radius: 2px;
+      background: linear-gradient(to right, #fff 0%, #fff 30%, #e8138b 82%, #66cceb 100%);
+      background-size: 500%;
+      transition: all 0.5s ease-in-out;
+      margin-bottom: 30px;
+  }
+  .elementor-posts-container .elementor-post .elementor-post__read-more:hover {
+    animation-name: hover;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hover {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      color: white;
+      border: 1px solid transparent;
+    }
+    100% {
+      color: white;
+      background-position: 100%;
+      border: 1px solid transparent;
+    }
+  }
+  
+  /* ========================================
+   * ======== Home Middle Post Drop =========
+   * ======================================== */
+  
+  #ap-post-drop article:nth-child(odd) {
+    margin-bottom: 3rem !important;
+  }
+  #ap-post-drop article:nth-child(even) {
+    margin-top: 3rem !important;
+  }
+  @media (max-width: 768px) {
+    #ap-post-drop article:nth-child(odd) {
+      margin-bottom: 0rem !important;
+    }
+    #ap-post-drop article:nth-child(even) {
+      margin-top: 0rem !important;
+    }
+  }
+  
+  /* ========================================
+   * ======== Fancy Project Slider ==========
+   * ======================================== */
+  
+  #projectSlider .innercontainer {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 50px;
+  }
+  
+  /* Slider styles */
+  
+  #projectSlider .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+  
+  #projectSlider h4 {
+      margin-bottom: px!important;
+  }
+  
+  #projectSlider h5 {
+      margin-top: 5px!important;
+  }
+  
+  #projectSlider .content {
+      margin-left: 15%;
+  }
+  
+  #projectSlider .description {
+      padding-bottom: 20px;
+  }
+  
+  #projectSlider .big-number {
+      float: right;
+      position: relative;
+      margin-right: 10%;
+      color: #222222;
+      font-size: 130px;
+      font-weight: 800;
+      z-index: 8;
+  }
+  
+  #projectSlider .swiper-slide {
+      margin-bottom: 100px;
+  }
+  
+  #projectSlider .swiper-pagination {
+      padding-bottom: 30px;
+      position: relative;
+  }
+  #projectSlider .swiper-pagination::before {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background: black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+  }
+  #projectSlider .swiper-pagination-bullet {
+      color: #222222;
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0);
+      font-size: 20px;
+      font-weight: 400;
+      margin-right: 1.5%;
+  }
+  
+  #projectSlider .swiper-pagination-bullet-active {
+      font-weight: 800;
+      position: relative;
+  }
+  
+  #projectSlider .swiper-pagination-bullet-active::after {
+      content: "^";
+      position: absolute;
+      font-size: 37px;
+      font-weight: 400;
+      top: 50px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #projectSlider .big-number {
+      font-size: 80px!important;
+    }
+      #projectSlider .swiper-pagination-bullet {
+          font-size: 14px;
+          margin-right: 5%;
+      }
+      #projectSlider .swiper-pagination-bullet-active::after {
+          font-size: 25px;
+          top: 40px;
+      }
+      #projectSlider .innercontainer {
+          grid-template-columns: 1fr;
+      }
+      #projectSlider .content {
+      margin-left: 30px;
+          margin-right: 30px;
+      }
+      #projectSlider .swiper-slide {
+      margin-bottom:50px;
+      }
+  }
